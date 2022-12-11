@@ -20,8 +20,27 @@ body {
     color: #e4bb68;
 }
 
-.homepage_2 {
-    display: none;
+/* TEMPORARY BACKGROUND COLORS SET FOR PAGES */
+
+.aboutme {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: #c678dd;
+}
+
+.myprojects {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: #78dd7d;
+}
+
+.contactme {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: #dd9d78;
 }
 
 .string {
@@ -56,7 +75,7 @@ body {
   }
 
 .name1 {
-  color: #fa8231;
+  color: #fa8231; 
 }
 
 .name2 {
@@ -68,7 +87,7 @@ body {
 }
 
 .name4 {
-  color: #a9b0bd;
+  color: #78dd9a;
 }
 
 @keyframes move {
@@ -82,6 +101,37 @@ body {
   75% {
     transform: translatey(-16.5vmin);
   }
+}
+
+/* about me page contents */
+
+.profile_picture {
+    height: 120rem;
+    width: 100rem;
+    background-color: #e0e0e0;
+    color: #737373;
+    margin: auto;
+    margin-left: auto;
+    margin-right: 5rem;
+    padding: 70px 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.profile_picture img {
+    height: 13rem;
+    width: 13rem;
+    margin-bottom: 50px;
+}
+
+.introduction_1 {
+    margin: auto;
+    margin-left: 2rem;
+    text-align: start;
 }
 
 @media (max-width: 729px) {

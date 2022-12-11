@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #282c34;
+  font-size: 2vmin;
+  font-family: JetBrains Mono, monospace;
+}
+
+.homepage_1 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e4bb68;
+}
+
+.homepage_2 {
+    display: none;
+}
+
+.string {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  animation: move 7s infinite;
+}
+
+.who {
+  position: relative;
+  top: 8vmin;
+  animation: white-out 10s infinite;
+}
+
+.closure::after {
+    content: '';
+    position: absolute;
+    height: 25vmin;
+    width: 90vmin;
+    background: #282c34;
+    transform: translate(-90vmin, -25vmin);
+  }
+  
+  .closure::before {
+    content: '';
+    position: absolute;
+    height: 25vmin;
+    width: 90vmin;
+    background: #282c34;
+    transform: translate(-85vmin, 5vmin);
+  }
+
+.name1 {
+  color: #fa8231;
+}
+
+.name2 {
+  color: white;
+}
+
+.name3 {
+  color: #c678dd;
+}
+
+.name4 {
+  color: #a9b0bd;
+}
+
+@keyframes move {
+  25% {
+    transform: translatey(-5.8vmin);
+    opacity: 1;
+  }
+  50% {
+    transform: translatey(-11vmin);
+  }
+  75% {
+    transform: translatey(-16.5vmin);
+  }
+}
+
+@media (max-width: 1100px) {
+    /* .homepage_1 {
+        display: none;
+    }
+
+    .homepage_2 {
+        height: 100vh;
+        width: 100vw;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        color: #e4bb68;
+    }
+
+    .closure::after {
+        display: none;
+    } */
+
+    body {
+        background: #282c34;
+        font-size: 1vmin;
+        font-family: JetBrains Mono, monospace;
+      }
+  
+    .closure::before {
+        content: '';
+        position: absolute;
+        height: 25vmin;
+        width: 90vmin;
+        background: #282c34;
+        transform: translate(-85vmin, 2.5vmin);
+    }
+
+    .who {
+        position: relative;
+        top: 4vmin;
+        animation: white-out 10s infinite;
+      }
+
+    @keyframes move {
+        25% {
+            transform: translatey(-2.9vmin);
+            opacity: 1;
+        }
+        50% {
+            transform: translatey(-5.5vmin);
+        }
+        75% {
+            transform: translatey(-8vmin);
+        }
+    }
+
+}

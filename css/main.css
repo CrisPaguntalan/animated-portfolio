@@ -107,8 +107,8 @@ body {
 /* about me page contents */
 
 .profile_picture {
-    height: 120rem;
-    width: 100rem;
+    height: 50vh;
+    width: 30vh;
     background-color: #e0e0e0;
     color: #737373;
     margin: auto;
@@ -180,12 +180,14 @@ body {
     }
 
     .profile_picture {
-        height: 12rem;
-        width: 10rem;
+        height: 50vh;
+        width: 30vh;
         background-color: #e0e0e0;
         color: #737373;
-        font-size: 10px;
+        font-size: 14px;
         margin-top: 5rem;
+        margin-left: auto;
+        margin-right: auto;
         padding: 35px 50px;
         display: flex;
         flex-direction: column;
@@ -204,8 +206,7 @@ body {
     .introduction_1 {
         width: 70vw;
         height: 70vh;
-        margin: auto;
-        margin-top: 1rem;
+        margin: 1rem auto auto auto;
         text-align: center;
     }
 }

@@ -87,36 +87,37 @@ body {
 @media (max-width: 729px) {
     body {
         background: #282c34;
-        font-size: 1vmin;
+        font-size: 1.5vmin;
         font-family: JetBrains Mono, monospace;
       }
   
     .closure::before {
         content: '';
         position: absolute;
-        height: 25vmin;
+        height: 30vmin;
         width: 90vmin;
         background: #282c34;
-        transform: translate(-85vmin, 2.5vmin);
+        transform: translate(-80vmin, 4.2vmin);
     }
 
     .who {
         position: relative;
-        top: 4vmin;
+        top: 6.2vmin;
         animation: white-out 10s infinite;
       }
 
     @keyframes move {
         25% {
-            transform: translatey(-2.9vmin);
+            transform: translatey(-4.5vmin);
             opacity: 1;
         }
         50% {
-            transform: translatey(-5.5vmin);
+            transform: translatey(-8.5vmin);
         }
         75% {
-            transform: translatey(-8vmin);
+            transform: translatey(-12.5vmin);
         }
     }
 
 }
+

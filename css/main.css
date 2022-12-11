@@ -12,7 +12,7 @@ body {
 }
 
 .homepage_1 {
-    height: 100vh;
+    height: 75vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -20,28 +20,28 @@ body {
     color: #e4bb68;
 }
 
-/* TEMPORARY BACKGROUND COLORS SET FOR PAGES */
-
-.aboutme {
-    height: 100vh;
+.homepage_nav {
+    height: 25vh;
     width: 100vw;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-color: #1e2227;
+}
+
+.homepage_nav button {
+    border: none;
+    background: none;
+    font-size: 2.5vmin;
+    font-family: JetBrains Mono, monospace;
+    color: #61afef;
+    padding: 1.6rem;
+}
+
+.homepage_nav button:hover {
     background-color: #282c34;
-    color: #e4bb68;
-}
-
-.myprojects {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    background-color: #78dd7d;
-}
-
-.contactme {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    background-color: #dd9d78;
+    cursor: pointer;
 }
 
 .string {
@@ -104,35 +104,103 @@ body {
   }
 }
 
-/* about me page contents */
+/* ABOUT ME PAGE */
+
+.aboutme {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #282c34;
+    color: #e4bb68;
+}
+
+.bottom_nav {
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-color: #1e2227; 
+}
+
+.bottom_nav button {
+    border: none;
+    background: none;
+    font-size: 2.5vmin;
+    font-family: JetBrains Mono, monospace;
+    color: #61afef;
+    padding: 1.6rem;
+}
+
+.bottom_nav button:hover {
+    background-color: #282c34;
+    cursor: pointer;
+}
+
+.about_body {
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+}
 
 .profile_picture {
     height: 50vh;
-    width: 30vh;
+    width: 50vh;
     background-color: #e0e0e0;
     color: #737373;
     margin: auto;
     margin-left: auto;
     margin-right: 5rem;
-    padding: 70px 100px;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .profile_picture img {
-    height: 13rem;
-    width: 13rem;
-    margin-bottom: 50px;
+    height: 50vh;
+    width: 50vh;
 }
 
 .introduction_1 {
     margin: auto;
     margin-left: 2rem;
     text-align: start;
+}
+
+/* MY PROJECTS PAGE */
+
+.myprojects {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #78dd7d;
+}
+
+.projects_page {
+    height: 85vh;
+    width: 100vw;
+}
+
+/* CONTACT ME PAGE */
+
+.contactme {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #dd9d78;
+}
+
+.contact_page {
+    height: 85vh;
+    width: 100vw;
 }
 
 @media (max-width: 729px) {
@@ -180,27 +248,25 @@ body {
     }
 
     .profile_picture {
-        height: 50vh;
-        width: 30vh;
+        height: 40vh;
+        width: 40vh;
         background-color: #e0e0e0;
         color: #737373;
-        font-size: 14px;
         margin-top: 5rem;
         margin-left: auto;
         margin-right: auto;
-        padding: 35px 50px;
         display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: center;
         align-items: center;
         border-radius: 20px;
+        overflow: hidden;
     }
     
     .profile_picture img {
-        height: 1.5rem;
-        width: 1.5rem;
-        margin-bottom: 25px;
+        height: 40vh;
+        width: 40vh;
     }
     
     .introduction_1 {

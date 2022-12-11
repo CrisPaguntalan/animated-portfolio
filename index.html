@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/script.js" defer></script>
     <title>Cris Estephan Paguntalan</title>
     
 </head>
 <body>
-    <div class="homepage">
+    <div class="homepage" id="HomePage">
         <div class="homepage_1">
             <h1>System<span style="color:white;">.<span style="color:#e06c75;">out</span>.</span><span style="color:#61afef;">println</span>("</h1>
             <div class="string">
@@ -20,24 +21,40 @@
             </div>
             <h1 class="closure">");</h1>
         </div>
+        <div class="homepage_nav">
+            <button onclick="scrollToAbout()"><h3><span style="color:#c678dd">AboutMe</span><span style="color:white">.</span>scrollIntoView</h3></button>
+            <button onclick="scrollToProjects()"><h3><span style="color:#c678dd">MyProjects</span><span style="color:white">.</span>scrollIntoView</h3></button>
+            <button onclick="scrollToContact()"><h3><span style="color:#c678dd">ContactMe</span><span style="color:white">.</span>scrollIntoView</h3></button>
+        </div>
     </div>
-    <div class="aboutme">
-        <div class="profile_picture">
-            <img src="media/error.png.png" alt="error_icon">
-            <h4>Oops! Sorry, I'm shy.</h4>
-            <p>This is the part where I am supposed to display my picture, but I haven't had any decent ones to show. Hope I get a nice photo soon and the courage to display it here.</p>
+    <div class="aboutme" id="AboutPage">
+        <div class="about_body">
+            <div class="profile_picture">
+                <img src="./media/profile.picture.png" alt="Profile">
+            </div>
+            <div class="introduction_1">
+                <h1>Hi! I'm <span class="name1">Cris Estephan Paguntalan</span>.</h1>
+            </div>
+            <div class="introduction_2"></div>
         </div>
-        <div class="introduction_1">
-            <h1>Hi! I'm <span class="name1">Cris Estephan Paguntalan</span>.</h1>
+        <div class="bottom_nav">
+            <button onclick="scrollToHome()"><h3><span style="color:#c678dd">Homepage</span><span style="color:white">.</span>scrollIntoView</h3></button>
         </div>
-        <div class="introduction_2"></div>
     </div>
     
-    <div class="myprojects">
-
+    <div class="myprojects" id="ProjectsPage">
+        <div class="projects_page"></div>
+        <div class="bottom_nav">
+            <button onclick="scrollToHome()"><h3><span style="color:#c678dd">Homepage</span><span style="color:white">.</span>scrollIntoView</h3></button>
+        </div>
     </div>
 
-    <div class="contactme"></div>
+    <div class="contactme" id="ContactPage">
+        <div class="contact_page"></div>
+        <div class="bottom_nav">
+            <button onclick="scrollToHome()"><h3><span style="color:#c678dd">Homepage</span><span style="color:white">.</span>scrollIntoView</h3></button>
+        </div
+    </div>
 
 </body>
 </html>
